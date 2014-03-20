@@ -1,0 +1,1936 @@
+/** ************************* **/
+/** Froont widget base styles **/
+/** ************************* **/
+.fr-widget h1,
+.fr-widget h2,
+.fr-widget h3,
+.fr-widget h4,
+.fr-widget h5,
+.fr-widget h6,
+.fr-widget p {
+  margin: 0;
+}
+html,
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "PT Sans", Tahoma, Verdana, sans-serif;
+}
+body {
+  font-size: 62.5%;
+}
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+input: focus, textarea: focus {
+  outline: none;
+}
+.b-content {
+  font-size: 1.6em;
+  padding-top: 0.02px;
+}
+.b-content.loading {
+  opacity: 0;
+}
+.b-content: after {
+  content: ".";
+  display: none;
+  clear: both;
+  line-height: 0;
+  height: 0;
+}
+a {
+  color: #000;
+  text-decoration: underline;
+}
+.fr-wf {
+  -webkit-transition: opacity .1s linear;
+  -moz-transition: opacity .1s linear;
+  -o-transition: opacity .1s linear;
+  transition: opacity .1s linear;
+  word-break: break-word;
+}
+.wf-loading .fr-wf {
+  opacity: 0 !important;
+}
+.wf-inactive .fr-wf,
+.wf-active .fr-wf {
+  opacity: 1;
+}
+.fr-container: after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.fr-widget {
+  display: block;
+}
+.fr-text * {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  text-decoration: inherit;
+}
+.fr-text i {
+  font-style: italic;
+}
+.fr-text u {
+  text-decoration: underline;
+}
+.fr-text del,
+.fr-text s,
+.fr-text strike {
+  text-decoration: line-through;
+}
+.fr-text b,
+.fr-text strong,
+.fr-text h1,
+.fr-text h2,
+.fr-text h3,
+.fr-text h4,
+.fr-text h5,
+.fr-text h6 {
+  font-weight: bold;
+}
+.fr-img {
+  line-height: 0;
+}
+.fr-img img {
+  width: 100%;
+  max-width: 100%;
+}
+.fr-svg svg {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+.fr-svg-inner svg {
+  position: absolute;
+}
+/** clear content around grid widget container, because it contains a lot of floated elements **/
+
+.fr-grid: before, .fr-grid: after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.fr-grid > .fr-widget {
+  float: left;
+}
+.fr-video-inner {
+  position: relative;
+}
+.fr-video-inner iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.fr_hover-animation {
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: background, color, border-radius;
+  -moz-transition-property: background, color, border-radius;
+  -o-transition-property: background, color, border-radius;
+  transition-property: background, color, border-radius;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+.fr-video-inner p {
+  display: none;
+}
+.fr-copyright-footer {
+  bottom: 0;
+  width: 100%;
+}
+.fr-copyright-footer.fixed {
+  position: fixed;
+  left: 0;
+}
+.fr-copyright-footer > .fr-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #242424;
+}
+.fr-copyright-footer .fr-made-with-froont {
+  width: auto;
+  font-family: Arial;
+  font-size: .6em;
+  line-height: 1.6em;
+  text-align: center;
+  letter-spacing: .25em;
+  margin: 0 auto;
+  padding: 2em 0 1em 0;
+  color: #979797;
+}
+.fr-copyright-footer .fr-made-with-froont .fr-text {
+  min-width: 100%;
+}
+.fr-copyright-footer .fr-made-with-froont .fr-text .heart {
+  font-size: 2.1em;
+}
+.fr-copyright-footer .fr-bottom-em-spacer {
+  height: 1em;
+  background: #242424;
+}
+
+/** ******************************** **/
+/** End of Froont widget base styles **/
+/** ******************************** **/
+
+/** ************************* **/
+/** Widget styles             **/
+/** ************************* **/
+.fr_share-description {
+  float: none;
+  display: block;
+  width: 80%;
+  font-family: PT Sans;
+  font-size: 1em;
+  line-height: 1.6em;
+  text-align: center;
+  margin-top: 1.0625em;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: 10.263157894736842%;
+  color: #181818
+}
+.fr_share-description .fr-text {
+  min-width: 100%
+}
+.fr_content-heading {
+  float: none;
+  display: block;
+  width: auto;
+  font-family: PT Sans Caption;
+  font-weight: bold;
+  font-size: 2.45em;
+  line-height: 1.7em;
+  text-align: center;
+  letter-spacing: 0;
+  margin-top: 2.204081632653061em;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  color: #141414;
+  clear: none
+}
+.fr_content-heading .fr-text {
+  min-width: 100%
+}
+.fr_content-description {
+  float: none;
+  display: block;
+  width: 80%;
+  font-family: PT Sans;
+  font-size: 1.5em;
+  line-height: 1.6em;
+  text-align: left;
+  margin-top: 3.3333333333333335em;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: 9.605263157894736%
+}
+.fr_content-description .fr-text {
+  min-width: 100%
+}
+.fr_feedback-block {
+  float: none;
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  line-height: 1.7em;
+  text-align: center;
+  margin-top: 1.125em;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0
+}
+.fr_feedback-block .fr-text {
+  min-width: 100%
+}
+.fr_top-heading {
+  float: none;
+  display: block;
+  width: auto;
+  font-family: PT Sans Caption;
+  font-weight: bold;
+  font-size: 3.2em;
+  line-height: 1.15em;
+  text-align: center;
+  margin-top: 1em;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: .13020833333333334%;
+  color: #141414;
+  clear: none
+}
+.fr_top-heading .fr-text {
+  min-width: 100%
+}
+.fr_top-description {
+  float: none;
+  display: block;
+  width: 90%;
+  font-family: PT Sans;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.6em;
+  text-align: center;
+  margin-top: 1em;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  clear: none
+}
+.fr_top-description .fr-text {
+  min-width: 100%
+}
+.fr_header {
+  float: none;
+  display: block;
+  width: auto;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  padding-top: 2em;
+  padding-right: 0;
+  padding-bottom: 4em;
+  padding-left: 0;
+  max-width: 768px
+}
+.fr_horizontal-rule {
+  float: none;
+  display: block;
+  width: 100%;
+  margin-top: 1.1875em;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: -0.39473684210526316%;
+  background: #00B391;
+  min-height: .25em
+}
+.fr_share-heading {
+  float: none;
+  display: block;
+  width: 86.99472759226713%;
+  font-family: PT Sans Caption;
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 1.3em;
+  text-align: center;
+  letter-spacing: 0;
+  margin-top: .380859375em;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: 6.780598958333334%;
+  color: #181818;
+  clear: left
+}
+.fr_share-heading .fr-text {
+  min-width: 100%
+}
+.fr_white-section {
+  float: none;
+  display: block;
+  width: auto;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: .5em;
+  padding-left: 0;
+  max-width: 760px
+}
+.fr_pibepe {
+  width: 30%;
+  margin-right: auto;
+  margin-left: auto
+}
+.fr_middle-section {
+  float: none;
+  display: block;
+  width: auto;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-top: 3em;
+  padding-right: 0;
+  padding-bottom: 5em;
+  padding-left: 0;
+  background: #222;
+  clear: none
+}
+.fr_rahita {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  margin-top: 4.3125em;
+  margin-right: auto;
+  margin-left: 10.526315789473683%
+}
+.fr_venosi {
+  display: inline-block;
+  width: 34.868421052631575%;
+  font-family: PT Sans;
+  font-size: 1.4em;
+  vertical-align: top;
+  margin-top: 8.045454545454545em;
+  margin-left: 12.107319078947368%;
+  min-height: 5.454545454545454em
+}
+.fr_venosi .fr-text {
+  min-width: 100%
+}
+.fr_rugawi {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  margin-top: .6875em;
+  margin-right: auto;
+  margin-left: 15.659950657894736%
+}
+.fr_femifa {
+  float: none;
+  display: block;
+  width: 100%;
+  margin-top: 3em;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  background: #00B391;
+  min-height: .25em
+}
+.fr_baveme {
+  display: inline-block;
+  width: 46.8421052631579%;
+  font-family: PT Sans;
+  font-size: 1.4em;
+  vertical-align: top;
+  margin-top: 8.409090909090908em;
+  margin-left: 6.973684210526315%
+}
+.fr_baveme .fr-text {
+  min-width: 100%
+}
+.fr_hufeja {
+  display: inline-block;
+  width: 35.526315789473685%;
+  font-family: PT Sans;
+  font-size: 1.4em;
+  vertical-align: top;
+  margin-top: 8.140625em;
+  margin-left: 19.342105263157894%
+}
+.fr_hufeja .fr-text {
+  min-width: 100%
+}
+.fr_kupupu {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  margin-top: 5.75em;
+  margin-right: auto;
+  margin-left: 7.631578947368421%
+}
+.fr_nageve {
+  display: block;
+  width: auto;
+  font-family: PT Sans;
+  font-size: 1.6em;
+  text-align: center;
+  margin-top: .8076923076923077em;
+  margin-right: auto;
+  margin-left: auto
+}
+.fr_nageve .fr-text {
+  min-width: 100%
+}
+.fr_rawara {
+  float: none;
+  display: block;
+  width: 100%;
+  margin-top: 2.5625em;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: .2631578947368421%;
+  background: #00B391;
+  min-height: .25em
+}
+.fr_forowo {
+  float: none;
+  display: block;
+  width: 86.99472759226713%;
+  font-family: PT Sans Caption;
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 1.3em;
+  text-align: center;
+  letter-spacing: 0;
+  margin-top: .537109375em;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: 6.634457236842104%;
+  color: #181818;
+  clear: left
+}
+.fr_forowo .fr-text {
+  min-width: 100%
+}
+.fr_picijo {
+  width: 40.13888888888889%;
+  margin-right: auto;
+  margin-left: auto
+}
+.fr_picijo .fr-video-inner {
+  padding-bottom: 75%;
+  position: relative
+}
+.fr_reboca {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  margin-top: 1.8125em;
+  margin-right: auto;
+  margin-left: 5%
+}
+.fr_jodife {
+  display: inline-block;
+  width: 28.421052631578945%;
+  vertical-align: top;
+  margin-top: 2.5em;
+  margin-left: 5%
+}
+.fr_nosica {
+  display: inline-block;
+  width: 27.368421052631582%;
+  vertical-align: top;
+  margin-top: 3.6875em;
+  margin-right: auto;
+  margin-left: 5.263157894736842%
+}
+.fr_suwago {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  margin-top: 3.0625em;
+  margin-right: auto;
+  margin-left: 30.92105263157895%
+}
+.fr_hubuve {
+  display: inline-block;
+  width: 22.763157894736842%;
+  font-family: PT Sans;
+  text-align: center;
+  vertical-align: top;
+  margin-top: 1.6875em;
+  margin-left: 7.894736842105263%
+}
+.fr_hubuve .fr-text {
+  min-width: 100%
+}
+.fr_suhamu {
+  display: inline-block;
+  width: 15.789473684210526%;
+  font-family: PT Sans;
+  text-align: center;
+  vertical-align: top;
+  margin-top: 1.6875em;
+  margin-right: auto;
+  margin-left: 11.710526315789474%
+}
+.fr_suhamu .fr-text {
+  min-width: 100%
+}
+.fr_wapotu {
+  display: inline-block;
+  width: 21.842105263157897%;
+  font-family: PT Sans;
+  text-align: center;
+  vertical-align: top;
+  margin-top: 1.5625em;
+  margin-right: auto;
+  margin-left: 8.289473684210526%
+}
+.fr_wapotu .fr-text {
+  min-width: 100%
+}
+.fr_wipano {
+  display: inline-block;
+  width: 19.736842105263158%;
+  font-family: PT Sans;
+  text-align: center;
+  vertical-align: top;
+  margin-top: .5625em;
+  margin-right: auto;
+  margin-left: 40.921052631578945%
+}
+.fr_wipano .fr-text {
+  min-width: 100%
+}
+.fr_gavoga {
+  display: inline-block;
+  width: 22.105263157894736%;
+  vertical-align: top;
+  margin-top: 2.625em;
+  margin-right: auto;
+  margin-left: 35.26315789473684%
+}
+.fr_fovoho {
+  display: inline-block;
+  width: 32.76315789473684%;
+  vertical-align: top;
+  margin-top: 6.1875em;
+  margin-left: 31.44736842105263%
+}
+.fr_keguba {
+  display: inline-block;
+  width: 18.684210526315788%;
+  font-family: PT Sans;
+  text-align: center;
+  vertical-align: top;
+  margin-top: 1.8125em;
+  margin-right: auto;
+  margin-left: 44.34210526315789%
+}
+.fr_keguba .fr-text {
+  min-width: 100%
+}
+.fr_jigulu {
+  display: inline-block;
+  width: 21.842105263157897%;
+  font-family: PT Sans;
+  text-align: center;
+  vertical-align: top;
+  margin-top: -0.75em;
+  margin-right: auto;
+  margin-left: 39.473684210526315%
+}
+.fr_jigulu .fr-text {
+  min-width: 100%
+}
+.fr_funafu {
+  float: none;
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  line-height: 1.7em;
+  text-align: center;
+  margin-top: .75em;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0
+}
+.fr_funafu .fr-text {
+  min-width: 100%
+}
+.fr_kifute {
+  float: none;
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  line-height: 1.7em;
+  text-align: center;
+  margin-top: 1.125em;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0
+}
+.fr_kifute .fr-text {
+  min-width: 100%
+}
+@media screen and (max-width: 1024px) {
+  .fr_share-description {
+    display: block;
+    margin-top: 1.375em;
+    margin-left: 13.289473684210526%
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_content-heading {
+    font-size: 2.75em;
+    margin-top: 6.581676136363637em
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_content-description {
+    display: inline-block;
+    font-size: 1.7em;
+    text-align: left;
+    vertical-align: top;
+    margin-top: 3.1417824074074074em;
+    margin-left: 5.131578947368421%
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_feedback-block {
+    display: block;
+    margin-top: .8125em
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_top-heading {
+    display: block;
+    font-size: 5.25em;
+    text-decoration: inherit;
+    letter-spacing: 0;
+    margin-top: .10063244047619048em
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_top-description {
+    display: block;
+    font-size: 1.85em;
+    line-height: 1.65em;
+    margin-top: .6643120393120392em;
+    margin-left: 5.26123046875%
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_horizontal-rule {
+    display: block;
+    width: 132.6315789473684%;
+    margin-top: 1.1875em;
+    margin-left: -14.473684210526317%;
+    min-height: 0
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_share-heading {
+    display: block;
+    margin-top: .537109375em;
+    margin-left: 6.6009521484375%
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_white-section {
+    display: block;
+    margin-top: -12.0791015625em;
+    margin-left: 11.42578125%
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_pibepe {
+    display: block;
+    width: 37.5%;
+    margin-top: 8.5361328125em;
+    margin-right: auto;
+    margin-left: 30.338541666666668%
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_middle-section {
+    padding-top: 1px
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_rahita {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    margin-top: 1.8271484375em;
+    margin-left: 7.5%
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_venosi {
+    display: inline-block;
+    width: 38.94736842105263%;
+    font-size: 1.4em;
+    vertical-align: top;
+    margin-top: 13.234375em;
+    margin-left: 15.263157894736842%
+  }
+  .fr_venosi .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_rugawi {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    margin-top: 8.1396484375em;
+    margin-left: 8.289473684210526%
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_baveme {
+    display: inline-block;
+    width: 50.26315789473684%;
+    font-size: 1.4em;
+    vertical-align: top;
+    margin-top: 6.706891741071429em;
+    margin-left: 7.5%;
+    min-height: 9.8125em
+  }
+  .fr_baveme .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_hufeja {
+    display: inline-block;
+    width: 32.631578947368425%;
+    font-size: 1.45em;
+    vertical-align: top;
+    margin-top: 6.645380434782608em;
+    margin-right: auto;
+    margin-left: 22.236842105263158%
+  }
+  .fr_hufeja .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_kupupu {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    margin-top: 2.6396484375em;
+    margin-left: 5.921052631578947%
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_nageve {
+    display: block;
+    font-size: 2em;
+    text-align: center;
+    margin-top: .6875em;
+    margin-left: .2631578947368421%
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_rawara {
+    display: block;
+    width: 135%;
+    margin-top: 4.375em;
+    margin-left: -16.18421052631579%;
+    min-height: .0625em
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_forowo {
+    display: block;
+    margin-top: .75em;
+    margin-left: 9.134457236842106%
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_picijo {
+    display: block;
+    width: 51.953125%;
+    margin-top: 3.875em;
+    margin-right: auto;
+    margin-left: 23.6328125%
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_reboca {
+    display: inline-block;
+    width: 21.578947368421055%;
+    vertical-align: top;
+    margin-top: 2.9375em;
+    margin-right: auto;
+    margin-left: 7.894736842105263%
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_jodife {
+    display: inline-block;
+    width: 19.86842105263158%;
+    vertical-align: top;
+    margin-top: 2.625em;
+    margin-left: 8.289473684210526%
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_nosica {
+    display: inline-block;
+    width: 15.789473684210526%;
+    vertical-align: top;
+    margin-top: 2.625em;
+    margin-right: auto;
+    margin-left: 10.921052631578949%
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_suwago {
+    display: inline-block;
+    width: 24.342105263157894%;
+    vertical-align: top;
+    margin-top: 3em;
+    margin-left: 38.94736842105263%
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_hubuve {
+    display: inline-block;
+    width: 16.842105263157894%;
+    text-align: center;
+    vertical-align: top;
+    margin-top: 1.25em;
+    margin-left: 10.131578947368421%
+  }
+  .fr_hubuve .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_suhamu {
+    display: inline-block;
+    width: 13.157894736842104%;
+    text-align: center;
+    vertical-align: top;
+    margin-top: 1.375em;
+    margin-right: auto;
+    margin-left: 11.842105263157894%
+  }
+  .fr_suhamu .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_wapotu {
+    display: inline-block;
+    width: 11.842105263157894%;
+    text-align: center;
+    vertical-align: top;
+    margin-top: 1.375em;
+    margin-right: auto;
+    margin-left: 13.421052631578947%
+  }
+  .fr_wapotu .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_wipano {
+    display: inline-block;
+    width: 18.421052631578945%;
+    text-align: center;
+    vertical-align: top;
+    margin-top: 1.5em;
+    margin-right: auto;
+    margin-left: 45.131578947368425%
+  }
+  .fr_wipano .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_gavoga {
+    display: inline-block;
+    width: 16.315789473684212%;
+    vertical-align: top;
+    margin-top: 2.5em;
+    margin-left: 43.815789473684205%
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_fovoho {
+    display: inline-block;
+    width: 22.105263157894736%;
+    vertical-align: top;
+    margin-top: 2.5625em;
+    margin-left: 43.28947368421053%
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_keguba {
+    display: inline-block;
+    width: 16.05263157894737%;
+    text-align: center;
+    vertical-align: top;
+    margin-top: 1.5em;
+    margin-right: auto;
+    margin-left: 48.55263157894737%
+  }
+  .fr_keguba .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_jigulu {
+    display: inline-block;
+    width: 17.894736842105264%;
+    text-align: center;
+    vertical-align: top;
+    margin-top: 1.4375em;
+    margin-right: auto;
+    margin-left: 47.63157894736842%
+  }
+  .fr_jigulu .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_funafu {
+    display: block;
+    margin-top: 2.125em
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_kifute {
+    display: block;
+    margin-top: 1.375em
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_share-description {
+    display: block;
+    text-align: center;
+    margin-top: 2.0546875em;
+    margin-left: 8.494241192411923%
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_content-heading {
+    display: block;
+    margin-left: 2.390328590785908%
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_content-description {
+    display: block;
+    font-size: 1.5em;
+    text-align: left;
+    margin-top: 1.9583333333333333em;
+    margin-left: 11.049712059620596%
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_feedback-block {
+    display: block;
+    margin-top: 1em
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_top-heading {
+    display: block;
+    font-size: 3.2em;
+    margin-top: .7169117647058824em;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_top-description {
+    display: block;
+    margin-top: .753125em;
+    margin-left: 5.398753612716764%
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_header {
+    width: 90%
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_horizontal-rule {
+    display: block;
+    margin-top: 1.5693359375em;
+    margin-left: .0021172086720867207%
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_share-heading {
+    display: block;
+    width: 83.46354166666666%;
+    margin-top: .10546875em;
+    margin-left: 7.692464192708333%
+  }
+  .fr_share-heading .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_white-section {
+    float: none;
+    display: block;
+    width: 96%;
+    margin-top: -15.625em;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: 1.9999186197916667%
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_pibepe {
+    display: block;
+    margin-top: 5.7236328125em;
+    margin-left: 30.446170520231213%
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_middle-section {
+    display: block;
+    padding-top: 1px;
+    min-height: 37.375em
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_rahita {
+    display: inline-block;
+    width: 28.04878048780488%;
+    vertical-align: top;
+    margin-top: 6.75em;
+    margin-left: 8.807588075880759%
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_venosi {
+    display: inline-block;
+    width: 42.41192411924119%;
+    font-size: 1.35em;
+    vertical-align: top;
+    margin-top: 9.721590909090908em;
+    margin-left: 19.605352303523034%;
+    min-height: 8.045454545454545em
+  }
+  .fr_venosi .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_rugawi {
+    display: inline-block;
+    width: 29.132791327913278%;
+    vertical-align: top;
+    margin-top: 5.8828125em;
+    margin-left: 6.131436314363143%
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_femifa {
+    display: block;
+    margin-top: 2.0791015625em;
+    background: #0012b3
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_baveme {
+    display: inline-block;
+    width: 41.32791327913279%;
+    font-size: 1.35em;
+    vertical-align: top;
+    margin-top: 8.823863636363637em;
+    margin-left: 13.979928861788618%
+  }
+  .fr_baveme .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_hufeja {
+    display: inline-block;
+    width: 32.79132791327913%;
+    font-size: 1.35em;
+    vertical-align: top;
+    margin-top: 8.714488636363637em;
+    margin-left: 20.07537262872629%
+  }
+  .fr_hufeja .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_kupupu {
+    display: inline-block;
+    width: 29.945799457994582%;
+    vertical-align: top;
+    margin-top: 6em;
+    margin-left: 7.4673949864498645%
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_nageve {
+    display: block;
+    font-size: 1.95em;
+    text-align: center;
+    margin-top: 1.2772177419354838em;
+    margin-left: 2.250592818428184%
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_rawara {
+    display: block;
+    width: 100.8130081300813%;
+    margin-top: 5.0078125em;
+    margin-left: -0.26465108401084014%;
+    min-height: 0
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_forowo {
+    display: block;
+    margin-top: .65625em;
+    margin-left: 5.108824525745257%
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_picijo {
+    display: block;
+    width: 87.36979166666666%;
+    margin-top: 3.1875em;
+    margin-left: 6.770833333333333%
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_reboca {
+    display: inline-block;
+    width: 17.615176151761517%;
+    vertical-align: top;
+    margin-top: .9755859375em;
+    margin-left: 8.828760162601625%
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_jodife {
+    display: inline-block;
+    width: 17.750677506775066%;
+    vertical-align: top;
+    margin-top: 1.375em;
+    margin-left: 8.672086720867208%
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_nosica {
+    display: inline-block;
+    width: 15.040650406504067%;
+    vertical-align: top;
+    margin-top: -0.013671875em;
+    margin-left: 10.00169376693767%
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_suwago {
+    display: inline-block;
+    width: 20.59620596205962%;
+    vertical-align: top;
+    margin-top: 1.125em;
+    margin-left: 38.679285230352306%
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_hubuve {
+    display: inline-block;
+    width: 26.151761517615174%;
+    text-align: center;
+    vertical-align: top;
+    margin-top: 1.3232421875em;
+    margin-right: auto;
+    margin-left: 4.632452574525745%
+  }
+  .fr_hubuve .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_suhamu {
+    display: inline-block;
+    width: 26.151761517615174%;
+    text-align: center;
+    vertical-align: top;
+    margin-top: .3232421875em;
+    margin-right: auto;
+    margin-left: 5.314193766937669%
+  }
+  .fr_suhamu .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_wapotu {
+    display: inline-block;
+    width: 26.151761517615174%;
+    text-align: center;
+    vertical-align: top;
+    margin-top: .771484375em;
+    margin-right: auto;
+    margin-left: 4.615514905149051%
+  }
+  .fr_wapotu .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_wipano {
+    display: inline-block;
+    width: 26.151761517615174%;
+    text-align: center;
+    vertical-align: top;
+    margin-top: 1.4482421875em;
+    margin-right: auto;
+    margin-left: 31.944444444444443%
+  }
+  .fr_wipano .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_gavoga {
+    display: inline-block;
+    width: 15.853658536585366%;
+    vertical-align: top;
+    margin-top: 1.375em;
+    margin-left: 41.19452913279133%
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_fovoho {
+    display: inline-block;
+    width: 21.40921409214092%;
+    vertical-align: top;
+    margin-top: 1.00390625em;
+    margin-left: 39.84163279132791%
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_keguba {
+    display: inline-block;
+    width: 26.151761517615174%;
+    text-align: center;
+    vertical-align: top;
+    margin-top: -1.9892578125em;
+    margin-right: auto;
+    margin-left: 62.89591802168022%
+  }
+  .fr_keguba .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_jigulu {
+    display: inline-block;
+    width: 27.235772357723576%;
+    text-align: center;
+    vertical-align: top;
+    margin-top: .5771484375em;
+    margin-right: auto;
+    margin-left: 31.4892445799458%
+  }
+  .fr_jigulu .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_funafu {
+    display: block;
+    width: 51.171875%;
+    text-align: center;
+    margin-top: 1.80078125em;
+    margin-left: 24.479166666666664%
+  }
+  .fr_funafu .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_kifute {
+    display: block;
+    width: 51.171875%;
+    text-align: center;
+    margin-top: 1.36328125em;
+    margin-left: 23.4375%
+  }
+  .fr_kifute .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_share-description {
+    display: block;
+    width: auto;
+    text-align: center;
+    margin-top: .5625em;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: -0.4629629629629629%
+  }
+  .fr_share-description .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_content-heading {
+    float: none;
+    display: block;
+    width: auto;
+    font-size: 2.6em;
+    text-align: left;
+    vertical-align: top;
+    margin-top: 6.688988095238095em;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 15.972222222222221%;
+    clear: left
+  }
+  .fr_content-heading .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_content-description {
+    float: none;
+    display: block;
+    width: auto;
+    text-align: left;
+    margin-top: .23307291666666666em;
+    margin-right: auto;
+    margin-bottom: 0
+  }
+  .fr_content-description .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_feedback-block {
+    margin-top: 1.125em;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_top-heading {
+    float: none;
+    display: block;
+    width: auto;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    clear: left
+  }
+  .fr_top-heading .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_top-description {
+    float: left;
+    display: block;
+    width: auto;
+    font-size: 1em;
+    line-height: 1.4em;
+    text-align: center;
+    margin-top: 1.0625em;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 31.477864583333332%;
+    clear: left
+  }
+  .fr_top-description .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_header {
+    width: 90%
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_horizontal-rule {
+    display: none
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_share-heading {
+    float: none;
+    display: block;
+    width: auto;
+    text-align: center;
+    margin-top: .43017578125em;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 2.293113425925926%
+  }
+  .fr_share-heading .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_white-section {
+    width: 90%;
+    padding-top: 1px;
+    padding-right: 0;
+    padding-left: 0
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_middle-section {
+    padding-top: 2em;
+    padding-right: 0;
+    padding-bottom: 3em;
+    padding-left: 0
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_rahita {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 1.4375em;
+    margin-left: 38.436776620370374%
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_venosi {
+    display: block;
+    width: 75.23148148148148%;
+    vertical-align: top;
+    margin-top: 1.0987215909090908em;
+    margin-left: 9.25564236111111%
+  }
+  .fr_venosi .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_rugawi {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 1.474609375em;
+    margin-left: 38.11848958333333%
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_femifa {
+    display: none
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_baveme {
+    display: block;
+    width: 86.80555555555556%;
+    vertical-align: top;
+    margin-top: .06392045454545454em;
+    margin-left: 11.62109375%;
+    min-height: 10.363636363636363em
+  }
+  .fr_baveme .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_hufeja {
+    display: inline-block;
+    width: 86.11111111111111%;
+    vertical-align: top;
+    margin-top: .8238636363636364em;
+    margin-left: 5.324074074074074%
+  }
+  .fr_hufeja .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_kupupu {
+    display: block;
+    vertical-align: top;
+    margin-top: 3.5966796875em;
+    margin-left: 36.64641203703704%
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_nageve {
+    display: block;
+    vertical-align: top;
+    margin-top: 1.3765120967741935em;
+    margin-left: 1.0923032407407407%
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_rawara {
+    display: none
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_forowo {
+    float: none;
+    display: block;
+    width: auto;
+    text-align: center;
+    margin-top: .5107421875em;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 2.293113425925926%
+  }
+  .fr_forowo .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_nosica {
+    margin-top: 3.611328125em
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_suhamu {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 2.0107421875em;
+    margin-left: 6.514033564814816%
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_wapotu {
+    margin-top: .708984375em
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_fovoho {
+    margin-top: 4.62890625em
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_keguba {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 1.7607421875em;
+    margin-left: 29.072627314814813%
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_jigulu {
+    margin-top: .5146484375em
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_funafu {
+    display: block;
+    margin-top: .9375em;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 23.75%
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_kifute {
+    display: block;
+    margin-top: .9375em;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 23.75%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_share-description {
+    display: block;
+    text-align: center;
+    margin-top: 1em;
+    margin-left: .927734375%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_content-heading {
+    display: block;
+    width: auto;
+    text-align: center;
+    margin-top: .9345238095238095em;
+    margin-left: 7.986111111111111%
+  }
+  .fr_content-heading .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_content-description {
+    display: block;
+    width: auto;
+    text-align: center;
+    margin-top: 1.19140625em;
+    margin-left: -0.3472222222222222%
+  }
+  .fr_content-description .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_feedback-block {
+    display: block;
+    margin-top: 1.125em
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_top-heading {
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto
+  }
+  .fr_top-heading .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_top-description {
+    display: block;
+    width: auto;
+    font-size: 1em;
+    line-height: 1.25em;
+    text-align: center;
+    margin-top: .9375em;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 23.26388888888889%
+  }
+  .fr_top-description .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_header {
+    width: 90%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_share-heading {
+    display: block;
+    text-align: center;
+    margin-top: .91162109375em;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 5.555555555555555%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_white-section {
+    float: none;
+    display: block;
+    width: 90%;
+    margin-top: 2em;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_rahita {
+    display: block;
+    vertical-align: top;
+    margin-top: 1.6875em;
+    margin-left: 37.62478298611111%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_venosi {
+    display: block;
+    width: 85.06944444444444%;
+    vertical-align: top;
+    margin-top: .8167613636363636em;
+    margin-left: 9.44552951388889%
+  }
+  .fr_venosi .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_rugawi {
+    display: block;
+    vertical-align: top;
+    margin-top: .583984375em;
+    margin-left: 35.72048611111111%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_baveme {
+    display: block;
+    width: 85.06944444444444%;
+    vertical-align: top;
+    margin-top: 1.3153409090909092em;
+    margin-left: 8.680555555555555%;
+    min-height: 13.5em
+  }
+  .fr_baveme .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_hufeja {
+    display: inline-block;
+    width: 77.43055555555556%;
+    vertical-align: top;
+    margin-top: .609375em;
+    margin-left: 13.579644097222221%
+  }
+  .fr_hufeja .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_kupupu {
+    display: block;
+    vertical-align: top;
+    margin-top: 2.740234375em;
+    margin-left: 37.646484375%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_nageve {
+    display: block;
+    margin-top: .8306451612903226em;
+    margin-left: 1.4377170138888888%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_forowo {
+    display: block;
+    text-align: center;
+    margin-top: .59912109375em;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 4.513888888888888%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_reboca {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 1.8505859375em;
+    margin-left: 11.604817708333332%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_jodife {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: .5em;
+    margin-left: 11.100260416666668%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_nosica {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 1.923828125em;
+    margin-left: 11.387803819444445%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_suwago {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 1.75em;
+    margin-left: 38.330078125%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_hubuve {
+    display: inline-block;
+    width: 29.86111111111111%;
+    vertical-align: top;
+    margin-top: 1.0107421875em;
+    margin-left: 4.975043402777778%
+  }
+  .fr_hubuve .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_suhamu {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 1.0107421875em;
+    margin-left: 6.966145833333333%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_wapotu {
+    display: inline-block;
+    width: 27.083333333333332%;
+    vertical-align: top;
+    margin-top: 1.271484375em;
+    margin-left: 5.305989583333334%
+  }
+  .fr_wapotu .fr-text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_wipano {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: -5.1142578125em;
+    margin-left: 64.80577256944444%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_gavoga {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: .5em;
+    margin-left: 40.85828993055556%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_fovoho {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 2.50390625em;
+    margin-left: 40.53276909722222%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_keguba {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 1.0107421875em;
+    margin-left: 32.89930555555556%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_jigulu {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 1.3271484375em;
+    margin-left: 32.53038194444444%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_funafu {
+    display: block;
+    margin-top: 1.25em;
+    margin-left: 27.392578125%
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_kifute {
+    display: block;
+    width: 65%;
+    margin-top: 1.0625em;
+    margin-left: 20.625%
+  }
+  .fr_kifute .fr-text {
+    min-width: 100%
+  }
+}
+
+/** ******************************** **/
+/** End of widget styles             **/
+/** ******************************** **/
